@@ -7,19 +7,21 @@ The objective was to build a lightweight Linux server environment and perform es
 To improve efficiency and reduce repetitive manual tasks, a Bash shell script was developed to automate essential server setup and configuration operations.
 
 This project focuses on Linux server fundamentals, system administration, service management, security basics, and automation practices used in DevOps environments.
+
 🏗️ Infrastructure & Architecture
-Component	Configuration
-Operating System	Red Hat Enterprise Linux 10
-Installation Type	Minimal Installation
-Virtualization Platform	Oracle VirtualBox
-Virtual Machine Name	server5
-RAM	4000 MB (4 GB)
-CPU	1 Core
-Storage	40 GB VDI
-Disk Type	Virtual Disk Image (VDI)
-Package Manager	DNF / YUM
-Web Server	Apache HTTP Server (httpd)
-Firewall	firewalld
+- Component	Configuration
+- Operating System	Red Hat Enterprise Linux 10
+- Installation Type	Minimal Installation
+- Virtualization Platform	Oracle VirtualBox
+- Virtual Machine Name	server5
+- RAM	4000 MB (4 GB)
+- CPU	1 Core
+- Storage	40 GB VDI
+- Disk Type	Virtual Disk Image (VDI)
+- Package Manager	DNF / YUM
+- Web Server	Apache HTTP Server (httpd)
+- Firewall	firewalld
+
 Automation	Bash Shell Scripting⚙️ Implementation Steps
 1. Virtual Machine Creation
 - Created a virtual machine named server5.
@@ -50,15 +52,15 @@ rpm -q httpd
 Configured the RHEL firewall using firewalld.
 
 Installed the firewall package:
-sudo dnf install firewalld -y
-Enabled and started the firewall service:
-sudo systemctl enable --now firewalld
-Allowed HTTP traffic through the firewall:
-sudo firewall-cmd --permanent --add-service=http
-Reloaded the firewall configuration:
-sudo firewall-cmd --reload
-Verified firewall rules:
-sudo firewall-cmd --list-all
+- sudo dnf install firewalld -y
+- Enabled and started the firewall service:
+- sudo systemctl enable --now firewalld
+- Allowed HTTP traffic through the firewall:
+- sudo firewall-cmd --permanent --add-service=http
+- Reloaded the firewall configuration:
+- sudo firewall-cmd --reload
+- Verified firewall rules:
+   sudo firewall-cmd --list-all
 7. Bash Shell Scripting & Automation
 Developed a Bash script named setup.sh to automate essential server configuration tasks.
 
@@ -76,36 +78,17 @@ Execute the automation script:
 chmod +x setup.sh
 sudo ./setup.sh
 
-     Automation Workflow
-        RHEL 10 Minimal Server
-                 |
-                 v
-       Operating System Check
-                 |
-                 v
-       Repository Verification
-                 |
-                 v
-       Directory & File Creation
-                 |
-                 v
-       Apache Installation
-                 |
-                 v
-       Apache Service Management
-                 |
-                 v
-       Firewall Installation
-                 |
-                 v
-       Firewall Configuration
-                 |
-                 v
-       Service & Configuration
-             Verification
-                 |
-                 v
-       Automation Completed
+     Automation Workflow:
+     - RHEL 10 Minimal Server
+     - Operating System Check
+     - Repository Verification
+     - Directory & File Creation
+     - Apache Installation
+     - Apache Service Management
+     - Firewall Installation
+     - Firewall Configuration
+     - Service & Configuration  Verification
+     - Automation Completed
 
   Technologies & Tools Used
 - Red Hat Enterprise Linux 10 – Linux server operating system.
@@ -119,10 +102,8 @@ sudo ./setup.sh
 
 📂 Project Structure
 RHEL-10-Minimal-Server/
-│
-├── README.md
-│
-├── setup.sh
+- README.md
+-  setup.sh
 
  Key Learning Outcomes
 - Installed and configured RHEL 10 Minimal on Oracle VirtualBox.
@@ -141,4 +122,5 @@ RHEL-10-Minimal-Server/
 - Configure SSH key-based authentication.
 - Explore Linux performance monitoring and troubleshooting.
 - Integrate configuration management into a DevOps workflow.
-connect with me: www.linkedin.com/in/dipali-dehankar-91511a3a7
+  
+- connect with me: www.linkedin.com/in/dipali-dehankar-91511a3a7
