@@ -116,6 +116,7 @@ sudo ./setup.sh
 - firewalld – Linux firewall configuration.
 - systemd – Service management.
 - Linux CLI – System administration and troubleshooting.
+
 📂 Project Structure
 RHEL-10-Minimal-Server/
 │
